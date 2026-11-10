@@ -1,0 +1,102 @@
+{
+  "dataset_rows": 1296675,
+  "sampled_rows": 127506,
+  "training_rows": 89254,
+  "validation_rows": 38252,
+  "best_model": "Random Forest",
+  "selection_rule": "highest fraud recall, then macro F1",
+  "models": [
+    {
+      "model": "Logistic Regression",
+      "run_id": "bf189a5c43e94c2a993a71801e4c511a",
+      "accuracy": 0.9365261947087734,
+      "recall_class_0": 0.9480833333333333,
+      "recall_class_1": 0.7517761989342806,
+      "precision_class_1": 0.47529477821448624,
+      "f1_score_macro": 0.7740200956875865,
+      "roc_auc": 0.858855042431419,
+      "average_precision": 0.5911733253612925,
+      "confusion_matrix": [
+        [
+          34131,
+          1869
+        ],
+        [
+          559,
+          1693
+        ]
+      ]
+    },
+    {
+      "model": "Random Forest",
+      "run_id": "0ad2ffe0ebc346609cb0974d14dedc2b",
+      "accuracy": 0.9884711910488341,
+      "recall_class_0": 0.9929166666666667,
+      "recall_class_1": 0.9174067495559503,
+      "precision_class_1": 0.8901335631193451,
+      "f1_score_macro": 0.9487167621576553,
+      "roc_auc": 0.9943117475823958,
+      "average_precision": 0.9625631472280115,
+      "confusion_matrix": [
+        [
+          35745,
+          255
+        ],
+        [
+          186,
+          2066
+        ]
+      ]
+    },
+    {
+      "model": "XGBoost",
+      "run_id": "774d885024a44a2c88cfb5f749829a39",
+      "accuracy": 0.9928369758444003,
+      "recall_class_0": 0.9978055555555555,
+      "recall_class_1": 0.9134103019538188,
+      "precision_class_1": 0.9630149812734082,
+      "f1_score_macro": 0.9668787696597192,
+      "roc_auc": 0.9979010139135585,
+      "average_precision": 0.9813547774510781,
+      "confusion_matrix": [
+        [
+          35921,
+          79
+        ],
+        [
+          195,
+          2057
+        ]
+      ]
+    },
+    {
+      "model": "XGBoost + SMOTE",
+      "run_id": "f30a526431964d5897f341a80fb83333",
+      "accuracy": 0.990144306180069,
+      "recall_class_0": 0.99525,
+      "recall_class_1": 0.9085257548845471,
+      "precision_class_1": 0.9228687415426252,
+      "f1_score_macro": 0.9552037580001504,
+      "roc_auc": 0.996386816656799,
+      "average_precision": 0.9720370087883076,
+      "confusion_matrix": [
+        [
+          35829,
+          171
+        ],
+        [
+          206,
+          2046
+        ]
+      ]
+    }
+  ],
+  "registered_model": {
+    "name": "fraud-detection-model",
+    "version": "1",
+    "aliases": [
+      "challenger",
+      "champion"
+    ]
+  }
+}

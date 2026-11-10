@@ -1,0 +1,23 @@
+artifact_path: /workspace/scratch/cc65e2a29858/dinesh-assignment-work/Assignment-4/mlruns/1/models/m-64bd4191b3dc4dbfade8618d7c73d521/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.14
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.18.0
+model_id: m-64bd4191b3dc4dbfade8618d7c73d521
+model_size_bytes: 11310692
+model_uuid: m-64bd4191b3dc4dbfade8618d7c73d521
+prompts: null
+run_id: 0ad2ffe0ebc346609cb0974d14dedc2b
+utc_time_created: '2026-11-10 16:01:03.007620'
